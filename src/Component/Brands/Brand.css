@@ -30,7 +30,7 @@
 }
 .strip_top ul, .strip_bottom ul {
   display: flex;
-  gap: 250px;
+  gap: 400px;
   list-style: none;
   font-size: 1.2rem;
   font-weight: 600;
