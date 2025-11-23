@@ -3,7 +3,7 @@ import { shopContext } from '../ShopContext/ShopContext';
 import './ProductList.css';
 
 const ProductList = () => {
-  const {products} = useContext(shopContext);
+  const {products, addToCart} = useContext(shopContext);
   console.log(products);
   return (
     <div className='product_list'>
@@ -18,7 +18,7 @@ const ProductList = () => {
               <h4>{title}</h4>
               <p>${price}</p>
               </div>
-              <button className='cta'>Add To Cart</button>
+              <button onClick={() => addToCart(product,id)} className='cta'>Add To Cart</button>
             </div>
           )
         })}
